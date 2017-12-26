@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,900');
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 header {
   background-color: #242424;
   padding-top: 60px;
@@ -88,6 +92,7 @@ header .top-part .title {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 1.2;
+  font-weight: 300;
 }
 
 header .top-part .text {
@@ -111,6 +116,7 @@ header .top-part .consult {
 
 .highlight {
   color: #be1d13;
+  font-weight: 900;
 }
 
 .camera {
@@ -123,6 +129,9 @@ header .top-part .consult {
     box-sizing: border-box;
   }
   header .top-part .title {
+    font-size: 36px;
+  }
+  header .top-part .title .highlight{
     font-size: 40px;
   }
   .top-part {
