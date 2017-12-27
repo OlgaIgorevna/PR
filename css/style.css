@@ -10,9 +10,10 @@ header {
   color: white;
 }
 
-.left-part {
+header .left-part {
   display: flex;
   flex-wrap: nowrap;
+  padding-left: 15px;
 }
 
 .hamburger {
@@ -108,12 +109,13 @@ header .top-part .text {
 header .top-part .consult {
   background-color: #c51e15;
   color: white;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   border: none;
   border-radius: 40px;
   padding: 10px 20px;
   margin-top: 40px;
+  font-weight: 900;
 }
 
 .highlight {
@@ -165,7 +167,124 @@ header .top-part .consult {
   font-weight: 900;
   text-transform: uppercase;
 }
-.service .important{margin-top: 10px;}
+
+.main-part {
+  background-color: #242424;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.service .important {
+  margin-top: 10px;
+}
+
+.main-part .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*
+.main-part .block {
+  display: flex;
+}
+*/
+
+.main-part .block {
+  margin-bottom: 76px;
+}
+
+.main-part .block.right .wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-part .block .content {
+  padding-left: 20px;
+  position: relative;
+}
+
+
+
+.main-part .block .complete-image {
+  position: relative;
+}
+
+.main-part .block .complete-image .layer {
+  display: flex;
+  justify-content: center;
+}
+
+.main-part .block .complete-image .layer img {
+  width: 120px;
+  height: 120px;
+}
+
+.main-part .block .complete-image .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.main-part .block:nth-child(5) .complete-image .icon img {
+  width: 120px;
+  height: 90px;
+}
+
+.main-part .block .complete-image .icon {
+  position: absolute;
+  top: 40px;
+  left: 140px;
+}
+
+.main-part .block:nth-child(5) .complete-image .icon {
+  top: 140px;
+}
+
+/*
+.main-part .block.right .complete-image img{
+width:100%;
+}
+*/
+
+.main-part .block .content .title {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.main-part .block .content .text {
+  font-size: 14px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-part .block .content .text .first-text-block {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 30px;
+
+}
+
+
+.main-part .block .content .text .title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.main-part .block .content .text .second-text-block {
+  margin-bottom: 110px
+}
+
+.main-part .block .content .number {
+
+  display: none;
+}
+
 @media (min-width: 576px) {
   .right-part {
     display: block;
@@ -192,6 +311,10 @@ header .top-part .consult {
     height: 60px;
   }
 
+  .main-part .block .complete-image .layer img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -203,8 +326,26 @@ header .top-part .consult {
     max-width: 240px;
     margin-bottom: 0;
   }
+  .main-part .block .content .number {
+    font-size: 550px;
+    font-weight: 900;
+    color: #c51e14;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 0;
+    line-height: 0.64;
+    display: block;
+  }
 
-  
+  .main-part .block .complete-image .layer img {
+    width: 240px;
+    height: 240px;
+  }
+  .main-part .block .content .text .title {
+    font-size: 24px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -213,7 +354,11 @@ header .top-part .consult {
     background-image: url(../img/camera-header.png);
     background-size: contain;
     background-repeat: no-repeat;
+  }
 
+  .main-part .block .complete-image .layer img {
+    width: 300px;
+    height: 300px;
   }
 
 }
@@ -225,11 +370,24 @@ header .top-part .consult {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -133px;
-    margin-left: -90px;
+    margin-left: -70px;
+  }
+  .main-part .block .complete-image .layer img {
+    width: 370px;
+    height: 370px;
+  }
+  .main-part .block .complete-image .icon img {
+    width: 120px;
+    height: 120px;
+  }
+  .main-part .block .content {
+    padding-left: 60px;
+
   }
 }
 
 @media(min-width: 1920px) {
+  /*
   .col-lg,
   .col-lg-1,
   .col-lg-10,
@@ -262,4 +420,5 @@ header .top-part .consult {
     padding-left: 0;
     padding-right: 0;
   }
+*/
 }
