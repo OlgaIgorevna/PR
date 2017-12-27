@@ -123,9 +123,10 @@ header .top-part .text {
   font-weight: 900;
   box-shadow: 0 0 50px #262626;
 }
-button.small{
+
+button.small {
   font-size: 14px;
-   padding: 15px 25px;
+  padding: 15px 25px;
 }
 
 header .top-part .consult {
@@ -153,7 +154,7 @@ header .top-part .consult {
   width: 75px;
 }
 
-.service .logo .icon { 
+.service .logo .icon {
   margin-right: 20px;
 }
 
@@ -215,7 +216,7 @@ header .top-part .consult {
 }
 
 .main-part .block .content {
-  padding-left: 20px;
+
   position: relative;
 }
 
@@ -274,14 +275,16 @@ header .top-part .consult {
 width:100%;
 }
 */
+
 .main-part .block .content {
-/*
+  /*
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 */
   position: relative;
-  
+  padding-bottom: 100px;
+
 }
 
 .main-part .block .content .title {
@@ -292,14 +295,15 @@ width:100%;
 
 .main-part .block .content .text {
   font-size: 14px;
-  padding-right: 30px;  
+  padding-right: 0px;
   position: relative;
   z-index: 1;
 }
+
 .main-part .block.left .content .text {
-  
-  padding-left: 20px;  
-  
+
+  padding-left: 20px;
+
 }
 
 .main-part .block .content .text .first-text-block {
@@ -317,22 +321,20 @@ width:100%;
   margin-bottom: 20px;
 }
 
-.main-part .block .content .button-block{
-   position: absolute;
-    z-index: 1;
-  width: 300px;
-  
-  bottom: 0;
-  right: 0;
-  float:right;
+.main-part .block .content .button-block {
+
+  width: 200px;
+  margin: 0 auto;
+
+
 }
 
 
 
-.price{
-   position: absolute;
-  bottom: 10px;
-  float: left;
+.main-part .block .content .price {
+  margin: 0 auto;
+  width: 60px;
+  margin-bottom: 20px;
 }
 
 
@@ -340,6 +342,17 @@ width:100%;
 .main-part .block .content .number {
   display: none;
 }
+
+.text.row {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.second-text-block {
+  margin-bottom: 20px;
+}
+
 
 @media (min-width: 576px) {
   .right-part {
@@ -365,6 +378,33 @@ width:100%;
     padding: 20px 40px;
     margin-top: 75px;
     height: 60px;
+  }
+  .main-part .block .content .text {
+
+    padding-right: 30px;
+  }
+  .main-part .block .content {
+    padding-left: 20px;
+  }
+.second-text-block {
+  margin-bottom: 0;
+}
+
+  .main-part .block .content .button-block {
+    position: absolute;
+    z-index: 1;
+/*    width: 300px;*/
+    bottom: 0;
+    right: 0;
+    float: right;
+  }
+
+
+  .main-part .block .content .price {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    margin-bottom: 0;
   }
 
 
@@ -443,9 +483,9 @@ width:100%;
   }
   .main-part .block .complete-image .layer {
     width: 315px;
-    height: 315px;   
+    height: 315px;
   }
-    .main-part .block .complete-image .layer .icon img {
+  .main-part .block .complete-image .layer .icon img {
     width: 100px;
   }
 
@@ -474,9 +514,9 @@ width:100%;
     padding-right: 75px;
     padding-left: 0;
   }
-   .main-part .block .complete-image .layer {
+  .main-part .block .complete-image .layer {
     width: 380px;
-    height: 380px;   
+    height: 380px;
   }
 }
 
