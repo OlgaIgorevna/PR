@@ -10,62 +10,150 @@
 </head>
 
 <body>
- 
-<!--
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
--->
 
-<!-- Modal -->
-<div class="modal fade" id="modalConsult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">обратный звонок</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <!-- Modal -->
+  <div class="modal fade" id="modalConsult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Получить бесплатную консультацию</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-       
-         <form>
-        <div class="form-group row no-gutters">
+        </div>
+        <div class="modal-body">
 
-          <label for="inputName" class="col-12 col-sm-4 col-form-label">ваше имя</label>
-          <div class="col-12 col-sm-8 input-field">
-            <input type="text" class="form-control active" id="inputName" placeholder="Константин">
-          </div>
+          <form>
+            <div class="form-group row no-gutters">
 
-
-
-          <label for="inputEmail3" class="col-12 col-sm-4 col-form-label">Ваш E-mail</label>
-          <div class="col-12 col-sm-8 input-field">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
+              <label for="inputName" class="col-12 col-sm-4 col-form-label">ваше имя</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="text" class="form-control active" id="inputName" placeholder="Константин">
+              </div>
 
 
-          <label for="inputTel" class="col-12 col-sm-4 col-form-label phone">ваш телефон</label>
-          <div class="col-12 col-sm-8 input-field">
-            <input type="tel" class="form-control" id="inputTel">
-          </div>
+              <label for="inputNameCompany" class="col-12 col-sm-4 col-form-label">название компании</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="text" class="form-control" id="inputName">
+              </div>
 
-          <label for="comment" class="comment col-12 col-sm-4">комментарий</label>
-          <div class="col-12 col-sm-8">
-            <textarea rows="7" id="comment"></textarea>
-          </div>
-        </div>      
-      </form>
-      </div>
-      <div class="modal-footer">
-<!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>      -->
-     <button type="submit" class="red-button small">отправить</button>
+
+              <label for="inputEmail3" class="col-12 col-sm-4 col-form-label">Ваш E-mail</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+
+
+              <label for="inputTel" class="col-12 col-sm-4 col-form-label phone">ваш телефон</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="tel" class="form-control" id="inputTel">
+              </div>
+
+              <label for="comment" class="comment col-12 col-sm-4">комментарий</label>
+              <div class="col-12 col-sm-8">
+                <textarea rows="7" id="comment"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>      -->
+          <button type="submit" class="red-button small">отправить</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
- 
- 
+
+  <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">оформить заказ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group row no-gutters">
+
+              <label for="inputName" class="col-12 col-sm-4 col-form-label">ваше имя</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="text" class="form-control active" id="inputName" placeholder="Константин">
+              </div>
+
+              <label for="inputNameCompany" class="col-12 col-sm-4 col-form-label">название компании</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="text" class="form-control" id="inputName">
+              </div>
+
+              <label for="inputEmail3" class="col-12 col-sm-4 col-form-label">Ваш E-mail</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+
+
+              <label for="inputTel" class="col-12 col-sm-4 col-form-label phone">ваш телефон</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="tel" class="form-control" id="inputTel">
+              </div>
+
+              <label for="comment" class="comment col-12 col-sm-4">комментарий</label>
+              <div class="col-12 col-sm-8">
+                <textarea rows="7" id="comment"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>      -->
+          <button type="submit" class="red-button small">отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="modal fade" id="modalCall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">обратный звонок</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group row no-gutters">
+
+              <label for="inputName" class="col-12 col-sm-4 col-form-label">ваше имя</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="text" class="form-control active" id="inputName" placeholder="Константин">
+              </div>
+
+              <label for="inputTel" class="col-12 col-sm-4 col-form-label phone">ваш телефон</label>
+              <div class="col-12 col-sm-8 input-field">
+                <input type="tel" class="form-control" id="inputTel">
+              </div>
+
+              <label for="comment" class="comment col-12 col-sm-4">комментарий</label>
+              <div class="col-12 col-sm-8">
+                <textarea rows="7" id="comment"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>      -->
+          <button type="submit" class="red-button small">отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header>
     <div class="container">
       <div class="row headline justify-content-between">
@@ -163,7 +251,7 @@
               5900 р
             </div>
             <div class="button-block">
-              <button class="red-button small"> оформить заказ</button>
+              <button class="red-button small order"> оформить заказ</button>
             </div>
 
           </div>
@@ -197,7 +285,7 @@
               5900 р
             </div>
             <div class="button-block">
-              <button class="red-button small"> оформить заказ</button>
+              <button class="red-button small order order"> оформить заказ</button>
             </div>
           </div>
         </div>
@@ -237,7 +325,7 @@
               5900 р
             </div>
             <div class="button-block">
-              <button class="red-button small"> оформить заказ</button>
+              <button class="red-button small order"> оформить заказ</button>
             </div>
           </div>
 
@@ -269,7 +357,7 @@
               5900 р
             </div>
             <div class="button-block">
-              <button class="red-button small"> оформить заказ</button>
+              <button class="red-button small order"> оформить заказ</button>
             </div>
           </div>
 
@@ -302,7 +390,7 @@
               5900 р
             </div>
             <div class="button-block">
-              <button class="red-button small"> оформить заказ</button>
+              <button class="red-button small order"> оформить заказ</button>
             </div>
           </div>
 
@@ -334,7 +422,7 @@
               5900 р
             </div>
             <div class="button-block">
-              <button class="red-button small"> оформить заказ</button>
+              <button class="red-button small order"> оформить заказ</button>
             </div>
           </div>
 
