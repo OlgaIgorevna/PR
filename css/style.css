@@ -380,6 +380,53 @@ footer .logo-text {
   margin-top: 5px;
 }
 
+.form-block {
+  background-color: #242424;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-block .title {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.form-block label {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.form-block .form-group .input-field {
+  margin-bottom: 20px;
+}
+.form-block .form-group input{
+  border-radius: 40px;
+}
+/*
+.form-block .wrap-field{
+  display: flex;
+  flex-direction: row;
+}
+*/
+
+.form-block .input-field {
+  max-width: 560px;
+}
+
 @media (min-width: 576px) {
   .right-part {
     display: block;
@@ -507,7 +554,7 @@ footer .logo-text {
   .main-part .block.left {
     flex-direction: row-reverse;
   }
-  
+
   .advices {
     padding-bottom: 0;
   }
@@ -531,6 +578,23 @@ footer .logo-text {
     margin: 0 auto;
   }
 
+  .form-group .input-field {
+    margin-right: 20px;
+     max-width: 210px;
+  }
+  
+
+
+  .form-block label {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  .form-block .form-group .input-field:first-child {
+    margin-right: 10px;
+  }
+  .form-block label.phone {
+    max-width: 120px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -546,6 +610,13 @@ footer .logo-text {
   }
   .main-part .block .complete-image .layer .icon img {
     width: 100px;
+  }
+  .form-block .input-field {
+    max-width: 320px;
+  }
+  .form-block label {
+
+    margin-right: 20px;
   }
 
 
@@ -577,41 +648,12 @@ footer .logo-text {
     width: 380px;
     height: 380px;
   }
-}
 
-@media(min-width: 1920px) {
-  /*
-  .col-lg,
-  .col-lg-1,
-  .col-lg-10,
-  .col-lg-11,
-  .col-lg-12,
-  .col-lg-2,
-  .col-lg-3,
-  .col-lg-4,
-  .col-lg-5,
-  .col-lg-6,
-  .col-lg-7,
-  .col-lg-8,
-  .col-lg-9,
-  .col-lg-auto,
-  .col-xl,
-  .col-xl-1,
-  .col-xl-10,
-  .col-xl-11,
-  .col-xl-12,
-  .col-xl-2,
-  .col-xl-3,
-  .col-xl-4,
-  .col-xl-5,
-  .col-xl-6,
-  .col-xl-7,
-  .col-xl-8,
-  .col-xl-9,
-  .col-xl-auto,
-  .container {
-    padding-left: 0;
-    padding-right: 0;
+  .form-group .input-field {
+    max-width: 220px;
   }
-*/
+  
+  
+
+
 }
