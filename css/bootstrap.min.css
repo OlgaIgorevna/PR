@@ -5214,12 +5214,14 @@ button.list-group-item-dark.active {
   opacity: .5
 }
 
+/*
 .close:focus,
 .close:hover {
   color: #000;
   text-decoration: none;
   opacity: .75
 }
+*/
 
 button.close {
   padding: 0;
@@ -5282,7 +5284,11 @@ button.close {
   border-radius: .3rem;
   outline: 0
 }
-
+.modal-title{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+}
 .modal-backdrop {
   position: fixed;
   top: 0;
