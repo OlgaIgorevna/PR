@@ -270,18 +270,7 @@ header .top-part .consult {
 }
 
 
-/*
-.main-part .block.right .complete-image img{
-width:100%;
-}
-*/
-
 .main-part .block .content {
-  /*
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-*/
   position: relative;
   padding-bottom: 100px;
 
@@ -301,18 +290,14 @@ width:100%;
 }
 
 .main-part .block.left .content .text {
-
   padding-left: 20px;
-
 }
 
 .main-part .block .content .text .first-text-block {
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 20px;
-
 }
-
 
 .main-part .block .content .text .title {
   text-transform: uppercase;
@@ -325,18 +310,13 @@ width:100%;
 
   width: 200px;
   margin: 0 auto;
-
-
 }
-
-
 
 .main-part .block .content .price {
   margin: 0 auto;
   width: 60px;
   margin-bottom: 20px;
 }
-
 
 
 .main-part .block .content .number {
@@ -353,6 +333,29 @@ width:100%;
   margin-bottom: 20px;
 }
 
+.advices {
+  background: #242424;
+}
+
+.advices .wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.advices .text{
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.advices .highlight{
+  display: block;
+}
 
 @media (min-width: 576px) {
   .right-part {
@@ -386,14 +389,14 @@ width:100%;
   .main-part .block .content {
     padding-left: 20px;
   }
-.second-text-block {
-  margin-bottom: 0;
-}
+  .second-text-block {
+    margin-bottom: 0;
+  }
 
   .main-part .block .content .button-block {
     position: absolute;
     z-index: 1;
-/*    width: 300px;*/
+    /*    width: 300px;*/
     bottom: 0;
     right: 0;
     float: right;
@@ -407,6 +410,13 @@ width:100%;
     margin-bottom: 0;
   }
 
+  .advices .text{
+ 
+  align-items: center;
+  justify-content:flex-start;
+  text-align: left;
+}
+  .advices .highlight{display: inline;}
 
 }
 
@@ -472,6 +482,26 @@ width:100%;
   .main-part .block.left {
     flex-direction: row-reverse;
   }
+
+  .advices .container {
+    background: url(../img/advices-bg.png), transparent;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .advices .wrap {
+    display: block;
+  }
+  .advices .icon {
+
+    background-image: url(../img/advices-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
 }
 
 @media (min-width: 992px) {
