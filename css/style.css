@@ -48,7 +48,7 @@ header .logo img {
   width: 170px;
 }
 
-.logo-text {
+header .logo-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: white;
@@ -343,7 +343,7 @@ header .top-part .consult {
   display: none;
 }
 
-.advices .text{
+.advices .text {
   color: white;
   text-transform: uppercase;
   font-size: 24px;
@@ -353,8 +353,31 @@ header .top-part .consult {
   justify-content: center;
   text-align: center;
 }
-.advices .highlight{
+
+.advices .highlight {
   display: block;
+}
+
+.advices {
+  padding-bottom: 50px;
+}
+
+footer {
+  background-color: white;
+  padding: 50px 0;
+}
+
+footer .logo {
+  width: 180px;
+  margin: 0 auto;
+}
+
+footer .logo-text {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
 }
 
 @media (min-width: 576px) {
@@ -410,13 +433,15 @@ header .top-part .consult {
     margin-bottom: 0;
   }
 
-  .advices .text{
- 
-  align-items: center;
-  justify-content:flex-start;
-  text-align: left;
-}
-  .advices .highlight{display: inline;}
+  .advices .text {
+
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .advices .highlight {
+    display: inline;
+  }
 
 }
 
@@ -481,6 +506,10 @@ header .top-part .consult {
 
   .main-part .block.left {
     flex-direction: row-reverse;
+  }
+  
+  .advices {
+    padding-bottom: 0;
   }
 
   .advices .container {
