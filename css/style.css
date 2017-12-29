@@ -212,16 +212,18 @@ header .top-part .consult {
 
 .main-part .block.right .wrap {
   display: flex;
-  justify-content: flex-end;
+  /*  justify-content: flex-end;*/
 }
 
 .main-part .block .content {
 
   position: relative;
+
 }
 
 .main-part .block .wrap {
   margin-top: 40px;
+  flex-direction: column;
 }
 
 
@@ -272,9 +274,10 @@ header .top-part .consult {
 
 .main-part .block .content {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 
 }
+
 
 .main-part .block .content .title {
   font-weight: 900;
@@ -289,9 +292,6 @@ header .top-part .consult {
   z-index: 1;
 }
 
-.main-part .block.left .content .text {
-  padding-left: 20px;
-}
 
 .main-part .block .content .text .first-text-block {
   text-transform: uppercase;
@@ -312,21 +312,59 @@ header .top-part .consult {
   margin: 0 auto;
 }
 
+/*
 .main-part .block .price {
-  /*
+  
   margin: 0 auto;
   width: 150px;
   margin-bottom: 20px;
+
+}
 */
+
+/*
+.main-part .block .price {
+  display: block;
+  margin: 0 auto;
+  
 }
 
+.main-part .block .price .cost {
+  width: 50px;
+  float: left;
+}
+.main-part .block .price .ruble{
+  float: left;
+} 
+
+.main-part .block .button-block {
+  
+    position: absolute;
+    z-index: 1;
+        width: 300px;
+    bottom: 0;
+    right: 0;
+
+  display: block;
+  margin: 0 auto;
+  
+}
+*/
 
 .main-part .block .content .number {
   display: none;
 }
 
-.text.row {
+.main-part .block .content .text.row {
   margin: 0;
+  /*
+  padding-left: 15px;
+  padding-right: 15px;
+*/
+}
+
+.main-part .block .content {
+
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -535,9 +573,12 @@ textarea:focus {
 .price {
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 500px;
   flex-wrap: wrap;
+
 }
+
 
 .block.right .price {
   left: 0;
@@ -546,8 +587,10 @@ textarea:focus {
 .price .cost {
   /* display: inline-block;*/
   margin-right: 15px;
+  margin-left: 15px;
   font-weight: 900;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .ruble {
@@ -556,6 +599,7 @@ textarea:focus {
   width: 40px;
   height: 40px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -592,8 +636,16 @@ textarea:focus {
     padding-right: 30px;
   }
   .main-part .block .content {
-    padding-left: 20px;
+    /*    padding-left: 20px;*/
   }
+
+
+  .main-part .block .content {
+    position: relative;
+    padding-bottom: 100px;
+
+  }
+
   .second-text-block {
     margin-bottom: 0;
   }
@@ -604,7 +656,6 @@ textarea:focus {
     /*    width: 300px;*/
     bottom: 0;
     right: 0;
-    float: right;
   }
 
 
@@ -614,8 +665,15 @@ textarea:focus {
     bottom: 0;
     /*    float: left;*/
     margin-bottom: 0;
+    left: 20px;
+    max-width: 400px;
   }
 
+  
+.price .cost {
+ margin-bottom: 0;
+  margin-left: 0}
+  
   .advices .text {
 
     align-items: center;
@@ -704,6 +762,11 @@ textarea:focus {
     left: 38px;
     max-width: 250px;
   }
+
+  .main-part .block.left .content .text {
+    padding-left: 20px;
+  }
+
   .advices {
     padding-bottom: 0;
   }
