@@ -39,8 +39,36 @@ $(window).on("load", function () {
   $('#modalCall').on('shown.bs.modal', function () {
     $('#inputName3').focus();
   });
-  
-//  $('#inputName4').focus();
 
+//  $('#open-menu').click(function () {
+//    $("#menu").css("display", "block;");
+//  });
+
+  
+   $('#open-menu').click(function( e ) {
+       /*
+           вместо $("selector").click( observer ) можно использовать синтаксис вида
+                  $("selector").on( 'click', observer );
+       */
+       e.preventDefault(); // отменяем стандартное поведение
+
+       // изменение стиля в нашем случае можно сделать так
+       // этот способ быстрее всего, но применять его лучше не надо
+       // хотя если сильно важна производительность - пишите так
+//       document.getElementByID("menu").style.display = 'block';
+
+       // или так
+       $("#menu").css("display","block");
+       // или так
+//       $("#enterblock").show();
+   });
+  
+  
+    
+   $('#close-menu').click(function( e ) {
+       e.preventDefault();
+       $("#menu").css("display","none");
+   });
+  
 
 });

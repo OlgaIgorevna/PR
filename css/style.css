@@ -56,6 +56,10 @@ header .logo-text {
   margin-top: 5px;
 }
 
+header .menu .logo-text {
+  color: black;
+}
+
 .call {
 
   width: 210px;
@@ -602,6 +606,38 @@ textarea:focus {
   margin-bottom: 15px;
 }
 
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 2;
+  z-index: 10;
+  background: #fff;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.menu button{
+  background: none;
+  border:none;
+  color: #c41d14;
+  font-weight: 900;
+  font-size: 50px;
+  margin-right: 20px;
+}
+.menu .logo{display: inline-block;}
+
+.menu .divide {
+  display: none;
+}
+
+.menu .divide {
+  color: #c41d14;
+}
+
 /*---------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------*/
@@ -669,11 +705,12 @@ textarea:focus {
     max-width: 400px;
   }
 
-  
-.price .cost {
- margin-bottom: 0;
-  margin-left: 0}
-  
+
+  .price .cost {
+    margin-bottom: 0;
+    margin-left: 0
+  }
+
   .advices .text {
 
     align-items: center;
@@ -812,6 +849,8 @@ textarea:focus {
   .form-block label.phone {
     max-width: 120px;
   }
+
+
 }
 
 @media (min-width: 992px) {
@@ -837,12 +876,14 @@ textarea:focus {
     margin-right: 20px;
   }
 
-
-
-
   .form-block .form-group .input-field {
-
     max-width: 300px;
+  }
+    .menu-item {
+    display: inline-block;
+  }
+  .menu .divide {
+    display: inline;
   }
 
 
