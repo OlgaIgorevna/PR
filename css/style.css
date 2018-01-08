@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #242424;
+  background-color: #202020;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
@@ -75,6 +75,8 @@ header .menu .logo-text {
   font-size: 16px;
   text-transform: uppercase;
   box-shadow: 0 0 50px #262626;
+  position: relative;
+  z-index: 9;
 }
 
 .call img {
@@ -189,7 +191,7 @@ header .top-part .consult {
 }
 
 .main-part {
-  background-color: #242424;
+  background-color: #202020;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
@@ -378,7 +380,7 @@ header .top-part .consult {
 }
 
 .advices {
-  background: #242424;
+  background: #202020;
 }
 
 .advices .wrap {
@@ -425,7 +427,7 @@ footer .logo-text {
 }
 
 .form-block {
-  background-color: #242424;
+  background-color: #262626;
   color: white;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -462,6 +464,7 @@ textarea {
   overflow: hidden;
   width: 100%;
   display: flex;
+  padding: .375rem .75rem!important;
 }
 
 .form-block label {
@@ -620,15 +623,19 @@ textarea:focus {
   font-weight: 900;
   text-transform: uppercase;
 }
-.menu button{
+
+.menu button {
   background: none;
-  border:none;
+  border: none;
   color: #c41d14;
   font-weight: 900;
   font-size: 50px;
   margin-right: 20px;
 }
-.menu .logo{display: inline-block;}
+
+.menu .logo {
+  display: inline-block;
+}
 
 .menu .divide {
   display: none;
@@ -636,6 +643,10 @@ textarea:focus {
 
 .menu .divide {
   color: #c41d14;
+}
+
+.active-elem:hover {
+  cursor: pointer;
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -681,6 +692,10 @@ textarea:focus {
     padding-bottom: 100px;
 
   }
+  .red-button.small.order {
+    position: relative;
+    top: 7px;
+  }
 
   .second-text-block {
     margin-bottom: 0;
@@ -710,7 +725,9 @@ textarea:focus {
     margin-bottom: 0;
     margin-left: 0
   }
-
+  .ruble {
+    margin-bottom: 0;
+  }
   .advices .text {
 
     align-items: center;
@@ -803,6 +820,10 @@ textarea:focus {
   .main-part .block.left .content .text {
     padding-left: 20px;
   }
+  .red-button.small.order {
+    position: relative;
+    top: 12px;
+  }
 
   .advices {
     padding-bottom: 0;
@@ -849,8 +870,13 @@ textarea:focus {
   .form-block label.phone {
     max-width: 120px;
   }
+  .send {
+    padding-right: 40px;
+  }
 
-
+  .t-area {
+    max-width: 530px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -871,6 +897,10 @@ textarea:focus {
   .main-part .block .price {
     max-width: 430px;
   }
+   .red-button.small.order {
+    position: relative;
+    top: 7px;
+  }
   .form-block .form-group label {
 
     margin-right: 20px;
@@ -879,13 +909,18 @@ textarea:focus {
   .form-block .form-group .input-field {
     max-width: 300px;
   }
-    .menu-item {
+  .send {
+    padding-right: 80px;
+  }
+  .menu-item {
     display: inline-block;
   }
   .menu .divide {
     display: inline;
   }
-
+  .t-area {
+    max-width: 720px;
+  }
 
 }
 
@@ -929,7 +964,11 @@ textarea:focus {
     max-width: 220px;
   }
 
-
-
+  .send {
+    padding-right: 48px;
+  }
+  .t-area {
+    max-width: 933px;
+  }
 
 }
