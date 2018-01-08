@@ -3,6 +3,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 header {
   background-color: #202020;
   padding-top: 60px;
@@ -379,6 +387,29 @@ header .top-part .consult {
   margin-bottom: 20px;
 }
 
+
+.trust-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.trust-text {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+}
+
+.trust-block .left-part {
+  margin-bottom: 20px;
+}
+
+.trust-block .left-part img {
+  margin-right: 15px;
+}
+
 .advices {
   background: #202020;
 }
@@ -748,6 +779,12 @@ textarea:focus {
 }
 
 @media (min-width: 768px) {
+  .menu .divide {
+    display: inline;
+  }
+  .menu-item {
+    display: inline-block;
+  }
 
   .service {
     text-align: left;
@@ -822,8 +859,13 @@ textarea:focus {
   }
   .red-button.small.order {
     position: relative;
-    top: 12px;
+    top: 7px;
   }
+
+  .trust-block .left-part {
+    margin-bottom: 0;
+  }
+
 
   .advices {
     padding-bottom: 0;
@@ -897,7 +939,7 @@ textarea:focus {
   .main-part .block .price {
     max-width: 430px;
   }
-   .red-button.small.order {
+  .red-button.small.order {
     position: relative;
     top: 7px;
   }
@@ -921,6 +963,7 @@ textarea:focus {
   .t-area {
     max-width: 720px;
   }
+
 
 }
 
@@ -969,6 +1012,10 @@ textarea:focus {
   }
   .t-area {
     max-width: 933px;
+  }
+  .trust-block {
+
+    font-size: 24px;
   }
 
 }
