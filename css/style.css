@@ -3,6 +3,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a{
+  color: black;
+  
+}
 .container-item {
   display: flex;
   justify-content: center;
@@ -782,6 +786,9 @@ textarea:focus {
   .menu .divide {
     display: inline;
   }
+  .menu .divide:nth-child(2), .menu .divide:nth-child(6), .menu .divide:nth-child(8), .menu .divide:nth-child(12), .menu .divide:nth-child(16){
+    display: none;
+  }
   .menu-item {
     display: inline-block;
   }
@@ -922,6 +929,13 @@ textarea:focus {
 }
 
 @media (min-width: 992px) {
+  .menu .divide:nth-child(n) {
+    display: inline;
+  }
+  .menu .divide:nth-child(4), .menu .divide:nth-child(8), .menu .divide:nth-child(12){
+    display: none;
+  }
+  
   .camera {
     display: block;
     background-image: url(../img/camera-header.png);
