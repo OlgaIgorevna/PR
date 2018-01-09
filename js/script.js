@@ -1,21 +1,4 @@
-//$(document).ready(function(){
-//  //при нажатию на любую кнопку, имеющую класс .btn
-//  $(".consult").click(function() {
-//    //открыть модальное окно с id="modalConsult"
-//    $("#modalConsult").modal('show');
-//  });
-//  $(".order").click(function() {
-//    //открыть модальное окно с id="modalConsult"
-//    $("#modalOrder").modal('show');
-//  });
-//   $(".call").click(function() {
-//    //открыть модальное окно с id="modalConsult"
-//    $("#modalCall").modal('show');
-//  });
-//  
-//});
-$(window).on("load", function () {
-  //$(window).load(function() {
+$(window).on("load", function () {  
   $(".consult").click(function () {
     $("#modalConsult").modal('show');
   });
@@ -29,27 +12,20 @@ $(window).on("load", function () {
   });
 
   $('#modalConsult').on('shown.bs.modal', function () {
-    $('#inputName1').focus();
+    $('#inputYourName1').focus();
   });
 
   $('#modalOrder').on('shown.bs.modal', function () {
-    $('#inputName2').focus();
+    $('#inputYourName2').focus();
   });
 
   $('#modalCall').on('shown.bs.modal', function () {
-    $('#inputName3').focus();
+    $('#inputYourName3').focus();
   });
-
-  //  $('#open-menu').click(function () {
-  //    $("#menu").css("display", "block;");
-  //  });
 
 
   $('#open-menu').click(function (e) {
-    /*
-        вместо $("selector").click( observer ) можно использовать синтаксис вида
-               $("selector").on( 'click', observer );
-    */
+
     e.preventDefault(); // отменяем стандартное поведение
 
     // изменение стиля в нашем случае можно сделать так
@@ -71,26 +47,26 @@ $(window).on("load", function () {
   });
 
 
-//  $('.slider-for').slick({
-//    slidesToShow: 1,
-//    slidesToScroll: 1,
-//    arrows: false,
-//    fade: true,
-//    asNavFor: '.slider-nav'
-//  });
-//  $('.slider-nav').slick({
-//    slidesToShow: 3,
-//    slidesToScroll: 1,
-//    asNavFor: '.slider-for',
-//    dots: true,
-//    focusOnSelect: true
-//  });
-//
-//  $('a[data-slide]').click(function (e) {
-//    e.preventDefault();
-//    var slideno = $(this).data('slide');
-//    $('.slider-nav').slick('slickGoTo', slideno - 1);
-//  });
+  //  $('.slider-for').slick({
+  //    slidesToShow: 1,
+  //    slidesToScroll: 1,
+  //    arrows: false,
+  //    fade: true,
+  //    asNavFor: '.slider-nav'
+  //  });
+  //  $('.slider-nav').slick({
+  //    slidesToShow: 3,
+  //    slidesToScroll: 1,
+  //    asNavFor: '.slider-for',
+  //    dots: true,
+  //    focusOnSelect: true
+  //  });
+  //
+  //  $('a[data-slide]').click(function (e) {
+  //    e.preventDefault();
+  //    var slideno = $(this).data('slide');
+  //    $('.slider-nav').slick('slickGoTo', slideno - 1);
+  //  });
 
 
   $('.multiple-items').slick({
@@ -99,37 +75,31 @@ $(window).on("load", function () {
     slidesToScroll: 1,
     responsive: [
 
-
       {
         breakpoint: 320,
         settings: {
           slidesToShow: 1
         }
-    },
+      },
 
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1
         }
-    },
+      },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2
         }
-    },
+      },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 1
         }
-    },
-
-
-
-
-
+      },
     ]
 
   });
