@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,900');
 body {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
 }
 
 a {
   color: black;
 }
+
 button:focus {
   outline: none;
 }
@@ -87,6 +89,7 @@ header .menu .logo-text {
   border-radius: 40px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: 900;
   text-transform: uppercase;
   box-shadow: 0 0 50px #262626;
   position: relative;
@@ -121,7 +124,7 @@ header .top-part .title {
 ul {
   list-style-type: none;
   font-size: 14px;
-  line-height: 2.5;
+  line-height: 1.4;
   padding-left: 0;
   margin-top: 30px;
 }
@@ -129,6 +132,7 @@ ul {
 header .top-part .text {
   list-style-type: none;
   font-size: 14px;
+  font-weight: 500;
   line-height: 2.5;
   padding-left: 0;
   margin-top: 40px;
@@ -146,7 +150,7 @@ header .top-part .text {
 
 button.small {
   font-size: 14px;
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 
 header .top-part .consult {
@@ -221,7 +225,7 @@ header .top-part .consult {
 }
 
 .main-part .block {
-  margin-bottom: 76px;
+  margin-bottom: 70px;
 }
 
 .main-part .block.right .wrap {
@@ -317,7 +321,7 @@ header .top-part .consult {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .main-part .block .button-block {
@@ -658,14 +662,14 @@ textarea:focus {
     margin-top: 80px;
   }
   header .top-part .text {
-    margin-top: 55px;
+    margin-top: 50px;
   }
 
   header .top-part .consult {
     font-size: 16px;
     border-radius: 40px;
     padding: 20px 40px;
-    margin-top: 75px;
+    margin-top: 65px;
     height: 60px;
   }
   .main-part .block .content .text {
@@ -675,7 +679,7 @@ textarea:focus {
 
   .main-part .block .content {
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 
   }
   .red-button.small.order {
@@ -748,6 +752,10 @@ textarea:focus {
     display: none;
   }
 
+  .container.service {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .service {
     text-align: left;
   }
@@ -768,6 +776,10 @@ textarea:focus {
     display: block;
     letter-spacing: 0;
   }
+  .main-part {
+    padding-bottom: 1px;
+  }
+
 
   .main-part .block.right .content .number {
     right: -10px;
@@ -815,6 +827,10 @@ textarea:focus {
   .main-part .block .price {
     left: 38px;
     max-width: 250px;
+    bottom: -50px;
+  }
+  .main-part .block .button-block {
+    bottom: -40px;
   }
 
   .main-part .block.left .content .text {
@@ -959,7 +975,7 @@ textarea:focus {
   }
 
   .main-part .block.right .content {
-    padding-left: 75px;
+    padding-left: 60px;
     padding-right: 0;
   }
   .main-part .block .complete-image .layer {
@@ -967,7 +983,7 @@ textarea:focus {
     height: 285px;
   }
   .main-part .block.left .content .text {
-    padding-right: 75px;
+    padding-right: 60px;
     padding-left: 0;
   }
   .main-part .block .complete-image .layer {
@@ -982,6 +998,19 @@ textarea:focus {
   }
   .main-part .block .price {
     max-width: 530px;
+  }
+  .main-part .block .price {
+    bottom: 30px;
+  }
+  .main-part .block .button-block {
+    bottom: 30px;
+  }
+
+  .main-part .block.right .button-block {
+    right: 30px;
+  }
+  .main-part .block.left .button-block {
+    right: 70px;
   }
 
   .form-block .form-group .input-field {
